@@ -23,7 +23,6 @@ jobs:
     - name: Building web app
       uses: azure/appservice-build@v2
       with:
-          platform-version: Python 3.8
           source-directory: .
           output-directory: .
     - name: Deploy web App using GH Action azure/webapps-deploy
